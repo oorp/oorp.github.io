@@ -515,40 +515,22 @@ table.CodeRay td.code>pre{padding:0}
 <h1>Object-Oriented Reengineering Patterns</h1>
 <div class="details">
 <span id="author" class="author">Serge Demeyer, Stéphane Ducasse, Oscar Nierstraszv</span><br>
-<span id="revnumber">version 0.01,</span>
-<span id="revdate">2017-01-25</span>
+<span id="revnumber">version 0.01-alpha,</span>
+<span id="revdate">2017-01-27</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#preamble">Preamble</a>
+<li><a href="#introduction">Introduction</a>
 <ul class="sectlevel2">
 <li><a href="#copyright-license">Copyright / License</a></li>
-<li><a href="#praise-for-object-oriented-reengineering-patterns">Praise</a></li>
-<li><a href="#foreword">Foreword</a>
-<ul class="sectlevel3">
-<li><a href="#foreword-by-martin-fowler">Foreword by Martin Fowler</a></li>
-</ul>
-</li>
-<li><a href="#foreword-by-ralph-e.-johnson">Foreword by Ralph E. Johnson</a></li>
-<li><a href="#preface">Preface</a></li>
 <li><a href="#a-fairy-tale">A Fairy Tale</a></li>
-<li><a href="#acknowledgments">Acknowledgments</a></li>
 </ul>
 </li>
 <li><a href="#reengineering-patterns">1. Reengineering Patterns</a>
 <ul class="sectlevel2">
-<li><a href="#1-1-why-do-we-reengineer">1.1 Why do we Reengineer?</a>
-<ul class="sectlevel3">
-<li><a href="#recognizing-the-need-to-reengineer">Recognizing the need to reengineer</a></li>
-</ul>
-</li>
-<li><a href="#the-reengineering-lifecycle">1.2 The Reengineering Lifecycle</a>
-<ul class="sectlevel3">
-<li><a href="#reverse-engineering">Reverse engineering</a></li>
-<li><a href="#reengineering">Reengineering</a></li>
-</ul>
-</li>
+<li><a href="#1-1-why-do-we-reengineer">1.1 Why do we Reengineer?</a></li>
+<li><a href="#the-reengineering-lifecycle">1.2 The Reengineering Lifecycle</a></li>
 <li><a href="#reengineering-patterns-1">1.3 Reengineering Patterns</a></li>
 <li><a href="#the-form-of-a-reengineering-pattern">1.4 The Form of a Reengineering Pattern</a></li>
 <li><a href="#a-map-of-reengineering-patterns">1.5 A Map of Reengineering Patterns</a></li>
@@ -572,62 +554,11 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#forces-1">Forces</a></li>
 <li><a href="#overview-1">Overview</a></li>
 <li><a href="#what-next">What Next</a></li>
-<li><a href="#chat-with-the-maintainers">3.1 Chat with the Maintainers</a>
-<ul class="sectlevel3">
-<li><a href="#problem">Problem</a></li>
-<li><a href="#solution">Solution</a></li>
-<li><a href="#tradeoffs">Tradeoffs</a></li>
-<li><a href="#example">Example</a></li>
-<li><a href="#rationale">Rationale</a></li>
-<li><a href="#known-uses">Known uses</a></li>
-<li><a href="#related-patterns">Related Patterns</a></li>
-<li><a href="#what-next-1">What Next</a></li>
-</ul>
-</li>
-<li><a href="#read-all-the-code-in-one-hour">3.2 Read all the Code in One Hour</a>
-<ul class="sectlevel3">
-<li><a href="#problem-1">Problem</a></li>
-<li><a href="#solution-1">Solution</a></li>
-<li><a href="#tradeoffs-1">Tradeoffs</a></li>
-<li><a href="#example-1">Example</a></li>
-<li><a href="#rationale-1">Rationale</a></li>
-<li><a href="#known-uses-1">Known Uses</a></li>
-<li><a href="#what-next-2">What Next</a></li>
-</ul>
-</li>
-<li><a href="#skim-the-documentation">3.3 Skim the Documentation</a>
-<ul class="sectlevel3">
-<li><a href="#problem-2">Problem</a></li>
-<li><a href="#solution-2">Solution</a></li>
-<li><a href="#tradeoffs-2">Tradeoffs</a></li>
-<li><a href="#example-2">Example</a></li>
-<li><a href="#rationale-2">Rationale</a></li>
-<li><a href="#known-uses-2">Known Uses</a></li>
-<li><a href="#what-next-3">What Next</a></li>
-</ul>
-</li>
-<li><a href="#interview-during-demo">3.4 Interview During Demo</a>
-<ul class="sectlevel3">
-<li><a href="#problem-3">Problem</a></li>
-<li><a href="#solution-3">Solution</a></li>
-<li><a href="#tradeoffs-3">Tradeoffs</a></li>
-<li><a href="#example-3">Example</a></li>
-<li><a href="#rationale-3">Rationale</a></li>
-<li><a href="#known-uses-3">Known Uses</a></li>
-<li><a href="#related-patterns-1">Related Patterns</a></li>
-<li><a href="#what-next-4">What Next</a></li>
-</ul>
-</li>
-<li><a href="#do-a-mock-installation">3.5 Do a Mock Installation</a>
-<ul class="sectlevel3">
-<li><a href="#problem-4">Problem</a></li>
-<li><a href="#solution-4">Solution</a></li>
-<li><a href="#tradeoffs-4">Tradeoffs</a></li>
-<li><a href="#example-4">Example</a></li>
-<li><a href="#known-uses-4">Known Uses</a></li>
-<li><a href="#what-next-5">What Next</a></li>
-</ul>
-</li>
+<li><a href="#chat-with-the-maintainers">3.1 Chat with the Maintainers</a></li>
+<li><a href="#read-all-the-code-in-one-hour">3.2 Read all the Code in One Hour</a></li>
+<li><a href="#skim-the-documentation">3.3 Skim the Documentation</a></li>
+<li><a href="#interview-during-demo">3.4 Interview During Demo</a></li>
+<li><a href="#do-a-mock-installation">3.5 Do a Mock Installation</a></li>
 </ul>
 </li>
 <li><a href="#initial-understanding">4. Initial Understanding</a>
@@ -635,39 +566,9 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#forces-2">Forces</a></li>
 <li><a href="#overview-2">Overview</a></li>
 <li><a href="#what-next-6">What Next</a></li>
-<li><a href="#analyze-the-persistent-data">4.1 Analyze the Persistent Data</a>
-<ul class="sectlevel3">
-<li><a href="#problem-5">Problem</a></li>
-<li><a href="#solution-5">Solution</a></li>
-<li><a href="#tradeoffs-5">Tradeoffs</a></li>
-<li><a href="#example-5">Example</a></li>
-<li><a href="#rationale-4">Rationale</a></li>
-<li><a href="#known-uses-5">Known Uses</a></li>
-<li><a href="#what-next-7">What Next</a></li>
-</ul>
-</li>
-<li><a href="#speculate-about-design">4.2 Speculate about Design</a>
-<ul class="sectlevel3">
-<li><a href="#problem-6">Problem</a></li>
-<li><a href="#solution-6">Solution</a></li>
-<li><a href="#tradeoffs-6">Tradeoffs</a></li>
-<li><a href="#example-6">Example</a></li>
-<li><a href="#rationale-5">Rationale</a></li>
-<li><a href="#known-uses-6">Known Uses</a></li>
-<li><a href="#what-next-8">What Next</a></li>
-</ul>
-</li>
-<li><a href="#study-the-exceptional-entities">4.3 Study the Exceptional Entities</a>
-<ul class="sectlevel3">
-<li><a href="#problem-7">Problem</a></li>
-<li><a href="#solution-7">Solution</a></li>
-<li><a href="#tradeoffs-7">Tradeoffs</a></li>
-<li><a href="#example-7">Example</a></li>
-<li><a href="#rationale-6">Rationale</a></li>
-<li><a href="#known-uses-7">Known Uses</a></li>
-<li><a href="#what-next-9">What Next</a></li>
-</ul>
-</li>
+<li><a href="#analyze-the-persistent-data">4.1 Analyze the Persistent Data</a></li>
+<li><a href="#speculate-about-design">4.2 Speculate about Design</a></li>
+<li><a href="#study-the-exceptional-entities">4.3 Study the Exceptional Entities</a></li>
 </ul>
 </li>
 <li><a href="#detailed-model-capture">5. Detailed Model Capture</a>
@@ -675,398 +576,84 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#forces-3">Forces</a></li>
 <li><a href="#overview-3">Overview</a></li>
 <li><a href="#what-next-10">What Next</a></li>
-<li><a href="#tie-code-and-questions">5.1 Tie Code and Questions</a>
-<ul class="sectlevel3">
-<li><a href="#problem-8">Problem</a></li>
-<li><a href="#solution-8">Solution</a></li>
-<li><a href="#tradeoffs-8">Tradeoffs</a></li>
-<li><a href="#rationale-7">Rationale</a></li>
-<li><a href="#known-uses-8">Known Uses</a></li>
-<li><a href="#related-patterns-2">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#refactor-to-understand">5.2 Refactor to Understand</a>
-<ul class="sectlevel3">
-<li><a href="#problem-9">Problem</a></li>
-<li><a href="#solution-9">Solution</a></li>
-<li><a href="#tradeoffs-9">Tradeoffs</a></li>
-<li><a href="#known-uses-9">Known Uses</a></li>
-<li><a href="#related-patterns-3">Related Patterns</a></li>
-<li><a href="#what-next-11">What Next</a></li>
-</ul>
-</li>
-<li><a href="#step-through-the-execution">5.3 Step Through the Execution</a>
-<ul class="sectlevel3">
-<li><a href="#problem-10">Problem</a></li>
-<li><a href="#solution-10">Solution</a></li>
-<li><a href="#tradeoffs-10">Tradeoffs</a></li>
-<li><a href="#what-next-12">What Next</a></li>
-</ul>
-</li>
-<li><a href="#look-for-the-contracts">5.4 Look for the Contracts</a>
-<ul class="sectlevel3">
-<li><a href="#problem-11">Problem</a></li>
-<li><a href="#solution-11">Solution</a></li>
-<li><a href="#tradeoffs-11">Tradeoffs</a></li>
-<li><a href="#known-uses-10">Known Uses</a></li>
-<li><a href="#what-next-13">What Next</a></li>
-</ul>
-</li>
-<li><a href="#learn-from-the-past">5.5 Learn from the Past</a>
-<ul class="sectlevel3">
-<li><a href="#problem-12">Problem</a></li>
-<li><a href="#solution-12">Solution</a></li>
-<li><a href="#tradeoffs-12">Tradeoffs</a></li>
-<li><a href="#rationale-8">Rationale</a></li>
-<li><a href="#known-uses-11">Known Uses</a></li>
-<li><a href="#what-next-14">What Next</a></li>
-</ul>
-</li>
+<li><a href="#tie-code-and-questions">5.1 Tie Code and Questions</a></li>
+<li><a href="#refactor-to-understand">5.2 Refactor to Understand</a></li>
+<li><a href="#step-through-the-execution">5.3 Step Through the Execution</a></li>
+<li><a href="#look-for-the-contracts">5.4 Look for the Contracts</a></li>
+<li><a href="#learn-from-the-past">5.5 Learn from the Past</a></li>
 </ul>
 </li>
 <li><a href="#tests-your-life-insurance">6. Tests: Your Life Insurance!</a>
 <ul class="sectlevel2">
-<li><a href="#forces-4">Forces</a>
-<ul class="sectlevel3">
-<li><a href="#reengineering-forces">Reengineering Forces</a></li>
-<li><a href="#system-development-forces">System Development Forces</a></li>
-<li><a href="#human-forces-customers">Human Forces (customers)</a></li>
-<li><a href="#human-forces-developers">Human Forces (developers)</a></li>
-</ul>
-</li>
+<li><a href="#forces-4">Forces</a></li>
 <li><a href="#overview-4">Overview</a></li>
-<li><a href="#write-tests-to-enable-evolution">6.1 Write Tests to Enable Evolution</a>
-<ul class="sectlevel3">
-<li><a href="#problem-13">Problem</a></li>
-<li><a href="#solution-13">Solution</a></li>
-<li><a href="#tradeoffs-13">Tradeoffs</a></li>
-<li><a href="#example-8">Example</a></li>
-<li><a href="#rationale-9">Rationale</a></li>
-<li><a href="#related-patterns-4">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#grow-your-test-base-incrementally">6.2 Grow Your Test Base Incrementally</a>
-<ul class="sectlevel3">
-<li><a href="#problem-14">Problem</a></li>
-<li><a href="#solution-14">Solution</a></li>
-<li><a href="#tradeoffs-14">Tradeoffs</a></li>
-<li><a href="#example-9">Example</a></li>
-<li><a href="#rationale-10">Rationale</a></li>
-<li><a href="#related-patterns-5">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#use-a-testing-framework">6.3 Use a Testing Framework</a>
-<ul class="sectlevel3">
-<li><a href="#problem-15">Problem</a></li>
-<li><a href="#solution-15">Solution</a></li>
-<li><a href="#tradeoffs-15">Tradeoffs</a></li>
-<li><a href="#example-10">Example</a></li>
-<li><a href="#rationale-11">Rationale</a></li>
-<li><a href="#known-uses-12">Known Uses</a></li>
-</ul>
-</li>
-<li><a href="#test-the-interface-not-the-implementation">6.4 Test the Interface, Not the Implementation</a>
-<ul class="sectlevel3">
-<li><a href="#problem-16">Problem</a></li>
-<li><a href="#solution-16">Solution</a></li>
-<li><a href="#tradeoffs-16">Tradeoffs</a></li>
-<li><a href="#example-11">Example</a></li>
-<li><a href="#rationale-12">Rationale</a></li>
-<li><a href="#related-patterns-6">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#record-business-rules-as-tests">6.5 Record Business Rules as Tests</a>
-<ul class="sectlevel3">
-<li><a href="#problem-17">Problem</a></li>
-<li><a href="#solution-17">Solution</a></li>
-<li><a href="#tradeoffs-17">Tradeoffs</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#rationale-13">Rationale</a></li>
-<li><a href="#related-patterns-7">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#write-tests-to-understand">6.6 Write Tests to Understand</a>
-<ul class="sectlevel3">
-<li><a href="#problem-18">Problem</a></li>
-<li><a href="#tradeoffs-18">Tradeoffs</a></li>
-<li><a href="#rationale-14">Rationale</a></li>
-<li><a href="#related-patterns-8">Related Patterns</a></li>
-</ul>
-</li>
+<li><a href="#write-tests-to-enable-evolution">6.1 Write Tests to Enable Evolution</a></li>
+<li><a href="#grow-your-test-base-incrementally">6.2 Grow Your Test Base Incrementally</a></li>
+<li><a href="#use-a-testing-framework">6.3 Use a Testing Framework</a></li>
+<li><a href="#test-the-interface-not-the-implementation">6.4 Test the Interface, Not the Implementation</a></li>
+<li><a href="#record-business-rules-as-tests">6.5 Record Business Rules as Tests</a></li>
+<li><a href="#write-tests-to-understand">6.6 Write Tests to Understand</a></li>
 </ul>
 </li>
 <li><a href="#migration-strategies">7. Migration Strategies</a>
 <ul class="sectlevel2">
 <li><a href="#forces-5">Forces</a></li>
 <li><a href="#overview-5">Overview</a></li>
-<li><a href="#involve-the-users">7.1 Involve the Users</a>
-<ul class="sectlevel3">
-<li><a href="#problem-19">Problem</a></li>
-<li><a href="#solution-18">Solution</a></li>
-<li><a href="#tradeoffs-19">Tradeoffs</a></li>
-<li><a href="#rationale-15">Rationale</a></li>
-<li><a href="#related-patterns-9">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#build-confidence">7.2 Build Confidence</a>
-<ul class="sectlevel3">
-<li><a href="#problem-20">Problem</a></li>
-<li><a href="#solution-19">Solution</a></li>
-<li><a href="#tradeoffs-20">Tradeoffs</a></li>
-<li><a href="#rationale-16">Rationale</a></li>
-<li><a href="#related-patterns-10">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#migrate-systems-incrementally">7.3 Migrate Systems Incrementally</a>
-<ul class="sectlevel3">
-<li><a href="#problem-21">Problem</a></li>
-<li><a href="#solution-20">Solution</a></li>
-<li><a href="#tradeoffs-21">Tradeoffs</a></li>
-<li><a href="#rationale-17">Rationale</a></li>
-<li><a href="#known-uses-13">Known Uses</a></li>
-<li><a href="#related-patterns-11">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#prototype-the-target-solution">7.4 Prototype the Target Solution</a>
-<ul class="sectlevel3">
-<li><a href="#problem-22">Problem</a></li>
-<li><a href="#solution-21">Solution</a></li>
-<li><a href="#rationale-18">Rationale</a></li>
-<li><a href="#related-patterns-12">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#always-have-a-running-version">7.5 Always Have a Running Version</a>
-<ul class="sectlevel3">
-<li><a href="#problem-23">Problem</a></li>
-<li><a href="#solution-22">Solution</a></li>
-<li><a href="#tradeoffs-23">Tradeoffs</a></li>
-<li><a href="#rationale-19">Rationale</a></li>
-<li><a href="#related-patterns-13">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#regression-test-after-every-change">7.6 Regression Test After Every Change</a>
-<ul class="sectlevel3">
-<li><a href="#problem-24">Problem</a></li>
-<li><a href="#solution-23">Solution</a></li>
-<li><a href="#tradeoffs-24">Tradeoffs</a></li>
-<li><a href="#rationale-20">Rationale</a></li>
-<li><a href="#related-patterns-14">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#make-a-bridge-to-the-new-town">7.7 Make a Bridge to the New Town</a>
-<ul class="sectlevel3">
-<li><a href="#problem-25">Problem</a></li>
-<li><a href="#solution-24">Solution</a></li>
-<li><a href="#tradeoffs-25">Tradeoffs</a></li>
-<li><a href="#known-uses-14">Known Uses</a></li>
-<li><a href="#rationale-21">Rationale</a></li>
-<li><a href="#related-patterns-15">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#present-the-right-interface">7.8 Present the Right Interface</a>
-<ul class="sectlevel3">
-<li><a href="#problem-26">Problem</a></li>
-<li><a href="#solution-25">Solution</a></li>
-<li><a href="#tradeoffs-26">Tradeoffs</a></li>
-<li><a href="#known-uses-15">Known Uses</a></li>
-<li><a href="#rationale-22">Rationale</a></li>
-<li><a href="#related-patterns-16">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#distinguish-public-from-published-interface">7.9 Distinguish Public from Published Interface</a>
-<ul class="sectlevel3">
-<li><a href="#problem-27">Problem</a></li>
-<li><a href="#solution-26">Solution</a></li>
-<li><a href="#tradeoffs-27">Tradeoffs</a></li>
-<li><a href="#known-uses-16">Known Uses</a></li>
-<li><a href="#rationale-23">Rationale</a></li>
-<li><a href="#related-patterns-17">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#deprecate-obsolete-interfaces">7.10 Deprecate Obsolete Interfaces</a>
-<ul class="sectlevel3">
-<li><a href="#problem-28">Problem</a></li>
-<li><a href="#solution-27">Solution</a></li>
-<li><a href="#tradeoffs-28">Tradeoffs</a></li>
-<li><a href="#known-uses-17">Known Uses</a></li>
-<li><a href="#rationale-24">Rationale</a></li>
-</ul>
-</li>
-<li><a href="#conserve-familiarity">7.11 Conserve Familiarity</a>
-<ul class="sectlevel3">
-<li><a href="#problem-29">Problem</a></li>
-<li><a href="#solution-28">Solution</a></li>
-<li><a href="#tradeoffs-29">Tradeoffs</a></li>
-<li><a href="#rationale-25">Rationale</a></li>
-<li><a href="#related-patterns-18">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#use-profiler-before-optimizing">7.12 Use Profiler Before Optimizing</a>
-<ul class="sectlevel3">
-<li><a href="#problem-30">Problem</a></li>
-<li><a href="#solution-29">Solution</a></li>
-<li><a href="#tradeoffs-30">Tradeoffs</a></li>
-<li><a href="#rationale-26">Rationale</a></li>
-<li><a href="#related-patterns-19">Related Patterns</a></li>
-</ul>
-</li>
+<li><a href="#involve-the-users">7.1 Involve the Users</a></li>
+<li><a href="#build-confidence">7.2 Build Confidence</a></li>
+<li><a href="#migrate-systems-incrementally">7.3 Migrate Systems Incrementally</a></li>
+<li><a href="#prototype-the-target-solution">7.4 Prototype the Target Solution</a></li>
+<li><a href="#always-have-a-running-version">7.5 Always Have a Running Version</a></li>
+<li><a href="#regression-test-after-every-change">7.6 Regression Test After Every Change</a></li>
+<li><a href="#make-a-bridge-to-the-new-town">7.7 Make a Bridge to the New Town</a></li>
+<li><a href="#present-the-right-interface">7.8 Present the Right Interface</a></li>
+<li><a href="#distinguish-public-from-published-interface">7.9 Distinguish Public from Published Interface</a></li>
+<li><a href="#deprecate-obsolete-interfaces">7.10 Deprecate Obsolete Interfaces</a></li>
+<li><a href="#conserve-familiarity">7.11 Conserve Familiarity</a></li>
+<li><a href="#use-profiler-before-optimizing">7.12 Use Profiler Before Optimizing</a></li>
 </ul>
 </li>
 <li><a href="#detecting-duplicated-code">8. Detecting Duplicated Code</a>
 <ul class="sectlevel2">
 <li><a href="#overview-6">Overview</a></li>
-<li><a href="#compare-code-mechanically">8.1 Compare Code Mechanically</a>
-<ul class="sectlevel3">
-<li><a href="#problem-31">Problem</a></li>
-<li><a href="#solution-30">Solution</a></li>
-<li><a href="#tradeoffs-31">Tradeoffs</a></li>
-<li><a href="#example-12">Example</a></li>
-<li><a href="#known-uses-18">Known Uses</a></li>
-</ul>
-</li>
-<li><a href="#visualize-code-as-dotplots">8.2 Visualize Code as Dotplots</a>
-<ul class="sectlevel3">
-<li><a href="#problem-32">Problem</a></li>
-<li><a href="#solution-31">Solution</a></li>
-<li><a href="#tradeoffs-32">Tradeoffs</a></li>
-<li><a href="#example-13">Example</a></li>
-<li><a href="#known-uses-19">Known Uses</a></li>
-<li><a href="#related-patterns-20">Related Patterns</a></li>
-</ul>
-</li>
+<li><a href="#compare-code-mechanically">8.1 Compare Code Mechanically</a></li>
+<li><a href="#visualize-code-as-dotplots">8.2 Visualize Code as Dotplots</a></li>
 </ul>
 </li>
 <li><a href="#redistribute-responsibilities">9. Redistribute Responsibilities</a>
 <ul class="sectlevel2">
 <li><a href="#forces-6">Forces</a></li>
 <li><a href="#overview-7">Overview</a></li>
-<li><a href="#move-behavior-close-to-data">9.1 Move Behavior Close to Data</a>
-<ul class="sectlevel3">
-<li><a href="#problem-33">Problem</a></li>
-<li><a href="#solution-32">Solution</a></li>
-<li><a href="#tradeoffs-33">Tradeoffs</a></li>
-<li><a href="#example-14">Example</a></li>
-<li><a href="#rationale-27">Rationale</a></li>
-<li><a href="#related-patterns-21">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#eliminate-navigation-code">9.2 Eliminate Navigation Code</a>
-<ul class="sectlevel3">
-<li><a href="#problem-34">Problem</a></li>
-<li><a href="#solution-33">Solution</a></li>
-<li><a href="#tradeoffs-34">Tradeoffs</a></li>
-<li><a href="#example-15">Example</a></li>
-<li><a href="#rationale-28">Rationale</a></li>
-<li><a href="#related-patterns-22">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#split-up-god-class">9.3 Split Up God Class</a>
-<ul class="sectlevel3">
-<li><a href="#problem-35">Problem</a></li>
-<li><a href="#solution-34">Solution</a></li>
-<li><a href="#tradeoffs-35">Tradeoffs</a></li>
-<li><a href="#rationale-29">Rationale</a></li>
-<li><a href="#related-patterns-23">Related Patterns</a></li>
-</ul>
-</li>
+<li><a href="#move-behavior-close-to-data">9.1 Move Behavior Close to Data</a></li>
+<li><a href="#eliminate-navigation-code">9.2 Eliminate Navigation Code</a></li>
+<li><a href="#split-up-god-class">9.3 Split Up God Class</a></li>
 </ul>
 </li>
 <li><a href="#transform-conditionals-to-polymorphism">10. Transform Conditionals to Polymorphism</a>
 <ul class="sectlevel2">
 <li><a href="#forces-7">Forces</a></li>
 <li><a href="#overview-8">Overview</a></li>
-<li><a href="#transform-self-type-checks">10.1 Transform Self Type Checks</a>
-<ul class="sectlevel3">
-<li><a href="#problem-36">Problem</a></li>
-<li><a href="#solution-35">Solution</a></li>
-<li><a href="#tradeoffs-36">Tradeoffs</a></li>
-<li><a href="#example-16">Example</a></li>
-<li><a href="#rationale-30">Rationale</a></li>
-<li><a href="#related-patterns-24">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#transform-client-type-checks">10.2 Transform Client Type Checks</a>
-<ul class="sectlevel3">
-<li><a href="#problem-37">Problem</a></li>
-<li><a href="#solution-36">Solution</a></li>
-<li><a href="#tradeoffs-37">Tradeoffs</a></li>
-<li><a href="#example-17">Example</a></li>
-<li><a href="#rationale-31">Rationale</a></li>
-<li><a href="#related-patterns-25">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#factor-out-state">10.3 Factor out State</a>
-<ul class="sectlevel3">
-<li><a href="#problem-38">Problem</a></li>
-<li><a href="#solution-37">Solution</a></li>
-<li><a href="#tradeoffs-38">Tradeoffs</a></li>
-<li><a href="#known-uses-20">Known Uses</a></li>
-</ul>
-</li>
-<li><a href="#factor-out-strategy">10.4 Factor out Strategy</a>
-<ul class="sectlevel3">
-<li><a href="#problem-39">Problem</a></li>
-<li><a href="#solution-38">Solution</a></li>
-<li><a href="#tradeoffs-39">Tradeoffs</a></li>
-<li><a href="#related-patterns-26">Related Patterns</a></li>
-</ul>
-</li>
-<li><a href="#introduce-null-object">10.5 Introduce Null Object</a>
-<ul class="sectlevel3">
-<li><a href="#problem-40">Problem</a></li>
-<li><a href="#solution-39">Solution</a></li>
-<li><a href="#tradeoffs-40">Tradeoffs</a></li>
-<li><a href="#example-19">Example</a></li>
-</ul>
-</li>
-<li><a href="#transform-conditionals-into-registration">10.6 Transform Conditionals into Registration</a>
-<ul class="sectlevel3">
-<li><a href="#problem-41">Problem</a></li>
-<li><a href="#solution-40">Solution</a></li>
-<li><a href="#example-20">Example</a></li>
-<li><a href="#tradeoffs-41">Tradeoffs</a></li>
-<li><a href="#related-patterns-27">Related Patterns</a></li>
-<li><a href="#script-identifying-simulated-switches-in-c">Script: Identifying simulated switches in C++</a></li>
-</ul>
-</li>
+<li><a href="#transform-self-type-checks">10.1 Transform Self Type Checks</a></li>
+<li><a href="#transform-client-type-checks">10.2 Transform Client Type Checks</a></li>
+<li><a href="#factor-out-state">10.3 Factor out State</a></li>
+<li><a href="#factor-out-strategy">10.4 Factor out Strategy</a></li>
+<li><a href="#introduce-null-object">10.5 Introduce Null Object</a></li>
+<li><a href="#transform-conditionals-into-registration">10.6 Transform Conditionals into Registration</a></li>
 </ul>
 </li>
 <li><a href="#thumbnail-patterns">Thumbnail patterns</a>
 <ul class="sectlevel2">
-<li><a href="#a.1-testing-patterns">A.1 Testing Patterns</a>
-<ul class="sectlevel3">
-<li><a href="#a.1.1-retest-persistent-problems">A.1.1 Retest Persistent Problems</a></li>
-<li><a href="#a.1.2-test-fuzzy-features">A.1.2 Test Fuzzy Features</a></li>
-<li><a href="#a.1.3-test-old-bugs">A.1.3 Test Old Bugs</a></li>
+<li><a href="#a.1-testing-patterns">A.1 Testing Patterns</a></li>
+<li><a href="#a.2-refactorings">A.2 Refactorings</a></li>
+<li><a href="#a.3-design-patterns">A.3 Design Patterns</a></li>
 </ul>
 </li>
-<li><a href="#a.2-refactorings">A.2 Refactorings</a>
-<ul class="sectlevel3">
-<li><a href="#a.2.1-encapsulate-field">A.2.1 Encapsulate Field</a></li>
-<li><a href="#a.2.2-extract-method">A.2.2 Extract Method</a></li>
-<li><a href="#a.2.3-move-method">A.2.3 Move Method</a></li>
-<li><a href="#a.2.4-rename-attribute">A.2.4 Rename Attribute</a></li>
-<li><a href="#a.2.5-rename-method">A.2.5 Rename Method</a></li>
-<li><a href="#a.2.6-replace-conditional-with-polymorphism">A.2.6 Replace Conditional with Polymorphism</a></li>
-</ul>
-</li>
-<li><a href="#a.3-design-patterns">A.3 Design Patterns</a>
-<ul class="sectlevel3">
-<li><a href="#a.3.1-abstract-factory">A.3.1 Abstract Factory</a></li>
-<li><a href="#a.3.2-adapter">A.3.2 Adapter</a></li>
-<li><a href="#a.3.3-facade">A.3.3 Facade</a></li>
-<li><a href="#a.3.4-factory-method">A.3.4 Factory Method</a></li>
-<li><a href="#a.3.5-flyweight">A.3.5 Flyweight</a></li>
-<li><a href="#a.3.6-null-object">A.3.6 Null Object</a></li>
-<li><a href="#a.3.7-quantity">A.3.7 Quantity</a></li>
-<li><a href="#a.3.8-singleton">A.3.8 Singleton</a></li>
-<li><a href="#a.3.9-state">A.3.9 State</a></li>
-<li><a href="#a.3.10-state-patterns">A.3.10 State Patterns</a></li>
-<li><a href="#a.3.11-strategy">A.3.11 Strategy</a></li>
-<li><a href="#a.3.12-template-method">A.3.12 Template Method</a></li>
-<li><a href="#a.3.13-visitor">A.3.13 Visitor</a></li>
-</ul>
-</li>
+<li><a href="#bibliography">Bibliography</a></li>
+<li><a href="#appendix">Appendix</a>
+<ul class="sectlevel2">
+<li><a href="#praise-for-object-oriented-reengineering-patterns">Praise</a></li>
+<li><a href="#foreword">Foreword</a></li>
+<li><a href="#acknowledgments">Acknowledgments</a></li>
 </ul>
 </li>
 </ul>
@@ -1074,106 +661,16 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="preamble"><a class="anchor" href="#preamble"></a>Preamble</h2>
+<h2 id="introduction"><a class="anchor" href="#introduction"></a>Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This site is a migrated version of the free available book <a href="http://scg.unibe.ch/oorp/">Object-Oriented Reengineering Patterns</a> from Serge Demeyer, Stéphane Ducasse and Oscar Nierstrasz; currently maintained by contributors on <a href="https://github.com/oorp/oorp">GitHub</a>. Feel free to submit your suggestions and enhancements!</p>
+<p>This site is a migrated version of the freely available book <a href="http://scg.unibe.ch/oorp/">Object-Oriented Reengineering Patterns</a> from Serge Demeyer, Stéphane Ducasse and Oscar Nierstrasz; currently maintained by contributors on <a href="https://github.com/oorp/oorp">GitHub</a>. Feel free to submit your suggestions and enhancements!</p>
 </div>
 <div class="sect2">
 <h3 id="copyright-license"><a class="anchor" href="#copyright-license"></a>Copyright / License</h3>
 <div class="paragraph">
 <p>Copyright © 2003 by Elsevier Science (USA). Copyright © 2008, 2009 by Serge Demeyer, Stéphane Ducasse and Oscar Nierstrasz. The contents of this book are protected under <a href="http://creativecommons.org/licenses/by-sa/3.0">Creative Commons Attribution-ShareAlike 3.0 Unported</a> license.</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="praise-for-object-oriented-reengineering-patterns"><a class="anchor" href="#praise-for-object-oriented-reengineering-patterns"></a>Praise</h3>
-<div class="paragraph">
-<p><em>for the original Object-Oriented Reengineering Patterns book</em></p>
-</div>
-<div class="quoteblock">
-<blockquote>
-<div class="paragraph">
-<p>“How” to refactor is already well covered in the literature. However, “When” and “Why” can only be learned by experience. This book will give you a head start in learning when to start redesigning a system, when to stop for now, and what effects you can expect to see from your efforts.</p>
-</div>
-</blockquote>
-<div class="attribution">
-&#8212; Kent Beck<br>
-<cite>Director, Three Rivers Institute</cite>
-</div>
-</div>
-<div class="quoteblock">
-<blockquote>
-<div class="paragraph">
-<p>This book is full of practical, hands-on reengineering knowledge and expertise presented in a form that makes it easy to understand and use. The patterns in this book thus help everyone who is concerned with using reengineering to guide their work. I wish I had had this book in my library earlier.</p>
-</div>
-</blockquote>
-<div class="attribution">
-&#8212; Frank Buschmann<br>
-<cite>Senior Principal Engineer Siemens AG</cite>
-</div>
-</div>
-<div class="quoteblock">
-<blockquote>
-<div class="paragraph">
-<p>This book is more than its title advertises. Effective reengineering is really about purposeful and efficient reading of someone else’s code in order to produce predictable change. The same processes the authors highlight as patterns of skillful reengineering behavior can easily be cast as the skills you need to create readable, maintainable software systems.</p>
-</div>
-</blockquote>
-<div class="attribution">
-&#8212; Adele Goldberg<br>
-<cite>Neometron, Inc.</cite>
-</div>
-</div>
-<div class="quoteblock">
-<blockquote>
-<div class="paragraph">
-<p>If a guy named Dave brought a large box to my office that contained a lot of documentation and two CDs-installation disks for software that my company wanted to reengineer — I’d be happy to have the authors of this book by my side. Barring that, having their book is the next best thing. No silver bullets, no hype, no promises that this will be easy — just a down-toearth, easy-to-read, extremely useful book of helpful guidelines to tackle the project. Buy this book and browse it before Dave arrives in your office! It just might save you and your company a lot of grief.</p>
-</div>
-</blockquote>
-<div class="attribution">
-&#8212; ]Linda Rising<br>
-<cite>Independent Consultant</cite>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="foreword"><a class="anchor" href="#foreword"></a>Foreword</h3>
-<div class="sect3">
-<h4 id="foreword-by-martin-fowler"><a class="anchor" href="#foreword-by-martin-fowler"></a>Foreword by Martin Fowler</h4>
-<div class="paragraph">
-<p>For a long time it’s puzzled me that most books on software development processes talk about what to do when you are starting from a blank sheet of editor screen. It’s puzzled me because that’s not the most common situation that people write code in. Most people have to make changes to an existing code base, even if it’s their own. In an ideal world this code base is well designed and well factored, but we all know how often the ideal world appears in our career.</p>
-</div>
-<div class="paragraph">
-<p>So this book is important because it’s written from the perspective of what to do with an imperfect yet valuable code base. I also like the fact that it’s based on an effective mix of academic and industrial work. I visited the FAMOOS group in their early days during a chill early winter in Bern. I liked the way that they cycled between the field and the lab, trying out ideas on real projects, coming back to the lab to reflect.</p>
-</div>
-<div class="paragraph">
-<p>This resulting book speaks with that experience. It gives you the building blocks for a plan to tackle a difficult code base, it gives you context for techniques like refactoring. It is a sad fact that there are too few of these kinds of books out there, when reengineering is still a common event. But I’m at least glad to see that while there aren’t many books in this vein, this book is an example of how good they are.</p>
-</div>
-<div class="paragraph">
-<p>Martin Fowler, <em>Thought Works, Inc.</em></p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="foreword-by-ralph-e.-johnson"><a class="anchor" href="#foreword-by-ralph-e.-johnson"></a>Foreword by Ralph E. Johnson</h3>
-<div class="paragraph">
-<p>One of the signs of a good pattern is that experts who read it are likely to say “of course, everybody knows that” but beginners are likely to say “interesting, but will it work?” Patterns should be easy to follow, but the most valuable patterns are those that are not obvious. Experts have learned from experience that the patterns work, but beginners have to take the patterns on faith until they use them and develop their own experience.</p>
-</div>
-<div class="paragraph">
-<p>Over the last couple of years, I’ve had the chance to give the patterns in this book to a wide variety of people and discuss them. My pattern discussion group has a few members who have decades of consulting experience, and they could quickly regale the group with stories of using these patterns. The younger members loved the stories as they were convinced of the value of the patterns.</p>
-</div>
-<div class="paragraph">
-<p>I made students in my software engineering class read some of the patterns as part of a section on reengineering. The section went well even though none of the students got excited by the patterns. They didn’t have the experience to evaluate them. However, one of the students came back to me after his summer job and said that of everything in the course, the material that was the most useful was the patterns on reverse engineering. Before that experience, the patterns seemed believable. Afterwards, they were believed!</p>
-</div>
-<div class="paragraph">
-<p>If you have a lot of experience with software reengineering then you probably won’t learn much from this book. You should read it anyway, because you’ll want to give copies to people you work with, and you will want to use the vocabulary of the book when you talk with them. If you are new to reengineering, you should read the book, learn the patterns, and try them. You will learn a lot that will be valuable. Don’t expect to understand the patterns completely before you try them, because patterns are practical, and practical knowledge has to be experienced to be fully understood. Nevertheless, the book will give you a big advantage. It is much easier to learn when you have a path to follow, and this book provides a reliable guide.</p>
-</div>
-<div class="paragraph">
-<p>Ralph E. Johnson, <em>University of Illinois at Urbana-Champaign</em></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="preface"><a class="anchor" href="#preface"></a>Preface</h3>
-
 </div>
 <div class="sect2">
 <h3 id="a-fairy-tale"><a class="anchor" href="#a-fairy-tale"></a>A Fairy Tale</h3>
@@ -1265,27 +762,6 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 <div class="paragraph">
 <p>The purpose of the book is to document the details.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="acknowledgments"><a class="anchor" href="#acknowledgments"></a>Acknowledgments</h3>
-<div class="paragraph">
-<p>We would like to thank first and foremost our FAMOOS partners at Nokia, Daimler-Benz, FZI and Sema who provided the context for discovering these patterns. Persons like Juha (Julho) Tuominen, Roland Trauter, Eduardo Casais and Theo Dirk Meijler played a crucial role while starting the project. We would especially like to thank our co-authors of the prototype for this book, <em>The FAMOOS Object-Oriented Reengineering Handbook:</em> Holger Bär, Markus Bauer, Oliver Ciupke, Michele Lanza, Radu Marinescu, Robb Nebbe, Michael Przybilski, Tamar Richner, Matthias Rieger, Claudio Riva, Anne-Marie Sassen, Benedikt Schulz, Patrick Steyaert, Sander Tichelaar and Joachim Weisbrod.</p>
-</div>
-<div class="paragraph">
-<p>We gratefully acknowledge the financial support of the European Union towards ESPRIT project 21975 (FAMOOS) as well as that of the Swiss Government towards projects NFS-2000-46947.96 and BBW-96.0015. The University of Antwerp provided financial support in terms of a grant entitled “Object Oriented Reengineering” while the Fund for Scientific Research in Flanders sponsored by means of a research network named “Foundations of Software Evolution”.</p>
-</div>
-<div class="paragraph">
-<p>Some of the material in this book was presented in the graduate course “Object-Oriented software Reengineering” held at the University of Bern in the winter semesters of 1998 and 1999, and at several tutorials at OOPSLA. We would like to thank the participants of the courses and tutorials for their feedback and input. We also would like to thank members of the Software Composition Group at the University of Bern for participating in several pattern workshops and giving valuable feedback on many of the patterns in this book: Michele Lanza, Pietro Malorgio, Robbe Nebbe, Tamar Richner, Matthias Rieger and Sander Tichelaar.</p>
-</div>
-<div class="paragraph">
-<p>Several of the patterns in this book have been presented elsewhere. We would like to thank our EuroPLoP shepherds Kent Beck (1998), Kyle Brown (1999), Neil Harrison (2000), Mary Lynn Manns (2000), Don Roberts (1998) and Charles Weir (1998) and all participants of the writers’ workshops where these patterns have been discussed. Special thanks go to Jens Coldewey for helping us out with pattern forms and forces.</p>
-</div>
-<div class="paragraph">
-<p>We would like to thank the members and friends of Ralph Johnson’s Software Architecture Group who workshopped several chapters of this book: John Brant, Brian Foote, Alejandra Garrido, Peter Hatch, Ralph Johnson, Brian Marick, Andrew Rosenfeld, Weerasak Witthawaskul and Joe Yoder. Downloading and playing voluminous megabytes of workshop recordings in mp3 format truly made each of us feel like a “fly on the wall”!</p>
-</div>
-<div class="paragraph">
-<p>We would like to thank Tim Cox, our editor, and Stacie Pierce, his assistant, both at Morgan Kaufmann, for following our project with such dedication. Also, thanks to Christa Preisendanz at DPunkt Verlag for putting us in touch with Tim in the first place! We especially appreciated the two very thorough rounds of reviews that this book underwent, and we only regret that the final draft of this book is nothing like the definitive work some of reviewers clearly hoped it would be! We thank our reviewers for reading between the lines and helping to explain many of these patterns to us: Kyle Brown, Thierry Cattel, Oliver Ciupke, Koen De Hondt, Jim Coplien, Gert Florijn, Neil Harrison, Mary Lynn Manns, Alan O’Callaghan, Don Roberts and Benedikt Schulz.</p>
 </div>
 </div>
 </div>
@@ -11232,8 +10708,10 @@ $ARGV, $swc, $l;
 <p><strong>Also Known As:</strong> Abstract Instance Variable [Rob99].</p>
 </div>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>There is a public field. Make it private and provide accessors.
-<strong>Source:</strong> _Refactoring: Improving the Design of Existing Code</em> [FBB<sup>+</sup>99].</p>
+<p><strong>Intent</strong> <em>There is a public field. Make it private and provide accessors.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Refactoring: Improving the Design of Existing Code</em> [FBB<sup>+</sup>99].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Eliminate Navigation Code [p. 230].</p>
@@ -11242,8 +10720,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.2.2-extract-method"><a class="anchor" href="#a.2.2-extract-method"></a>A.2.2 Extract Method</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>You have a code fragment that can be grouped together. Turn the fragment into a method whose name explains the purpose of the method.
-<strong>Source:</strong> _Refactoring: Improving the Design of Existing Code</em> [FBB<sup>+</sup>99].</p>
+<p><strong>Intent</strong> <em>You have a code fragment that can be grouped together. Turn the fragment into a method whose name explains the purpose of the method.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Refactoring: Improving the Design of Existing Code</em> [FBB<sup>+</sup>99].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Refactor to Understand [p. 115], Visualize Code as Dotplots [p. 210], Move Behavior Close to Data [p. 221]</p>
@@ -11252,8 +10732,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.2.3-move-method"><a class="anchor" href="#a.2.3-move-method"></a>A.2.3 Move Method</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>A method is, or will be, using or used by more features of another class than the class on which it is defined. Create a new method with a similar body in the class it uses most. Either turn the old method into a simple delegation, or remove it altogether.
-<strong>Source:</strong> _Refactoring: Improving the Design of Existing Code</em> [FBB<sup>+</sup>99].</p>
+<p><strong>Intent</strong> <em>A method is, or will be, using or used by more features of another class than the class on which it is defined. Create a new method with a similar body in the class it uses most. Either turn the old method into a simple delegation, or remove it altogether.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Refactoring: Improving the Design of Existing Code</em> [FBB<sup>+</sup>99].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Refactor to Understand [p. 115], Move Behavior Close to Data [p. 221]</p>
@@ -11262,8 +10744,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.2.4-rename-attribute"><a class="anchor" href="#a.2.4-rename-attribute"></a>A.2.4 Rename Attribute</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>Rename an instance variable and update all references to it.
-<strong>Source:</strong> _Practical Analysis for Refactoring</em> [Rob99].</p>
+<p><strong>Intent</strong> <em>Rename an instance variable and update all references to it.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Practical Analysis for Refactoring</em> [Rob99].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Refactor to Understand [p. 115].</p>
@@ -11272,8 +10756,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.2.5-rename-method"><a class="anchor" href="#a.2.5-rename-method"></a>A.2.5 Rename Method</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>The name of a method does not reveal its purpose. Change the name of the method.
-<strong>Source:</strong> _Refactoring: Improving the Design of Existing Code</em> [FBB<sup>+</sup>99].</p>
+<p><strong>Intent</strong> <em>The name of a method does not reveal its purpose. Change the name of the method.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Refactoring: Improving the Design of Existing Code</em> [FBB<sup>+</sup>99].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Refactor to Understand [p. 115]</p>
@@ -11282,8 +10768,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.2.6-replace-conditional-with-polymorphism"><a class="anchor" href="#a.2.6-replace-conditional-with-polymorphism"></a>A.2.6 Replace Conditional with Polymorphism</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>You have a conditional that chooses different behavior depending on the type of an object. Move each leg of the conditional to an overriding method in a subclass. Make the original method abstract.
-<strong>Source:</strong> _Refactoring: Improving the Design of Existing Code</em> [FBB<sup>+</sup>99].</p>
+<p><strong>Intent</strong> <em>You have a conditional that chooses different behavior depending on the type of an object. Move each leg of the conditional to an overriding method in a subclass. Make the original method abstract.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Refactoring: Improving the Design of Existing Code</em> [FBB<sup>+</sup>99].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Transform Client Type Checks [p. 257]</p>
@@ -11295,8 +10783,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.3.1-abstract-factory"><a class="anchor" href="#a.3.1-abstract-factory"></a>A.3.1 Abstract Factory</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
-<strong>Source:</strong> _Design Patterns</em> [GHJV95].</p>
+<p><strong>Intent</strong> _Provide an interface for creating families of related or dependent objects without specifying their concrete classes.</p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Design Patterns</em> [GHJV95].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Look for the Contracts [p. 123], Transform Client Type Checks [p. 257].</p>
@@ -11305,8 +10795,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.3.2-adapter"><a class="anchor" href="#a.3.2-adapter"></a>A.3.2 Adapter</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
-<strong>Source:</strong> _Design Patterns</em> [GHJV95].</p>
+<p><strong>Intent</strong> <em>Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Design Patterns</em> [GHJV95].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Present the Right Interface [p. 187], Move Behavior Close to Data [p. 221].</p>
@@ -11315,8 +10807,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.3.3-facade"><a class="anchor" href="#a.3.3-facade"></a>A.3.3 Facade</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
-<strong>Source:</strong> _Design Patterns</em> [GHJV95].</p>
+<p><strong>Intent</strong> <em>Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Design Patterns</em> [GHJV95].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Eliminate Navigation Code [p. 230], Split Up God Class [p. 239].</p>
@@ -11325,8 +10819,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.3.4-factory-method"><a class="anchor" href="#a.3.4-factory-method"></a>A.3.4 Factory Method</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
-<strong>Source:</strong> _Design Patterns</em> [GHJV95].</p>
+<p><strong>Intent</strong> <em>Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Design Patterns</em> [GHJV95].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Look for the Contracts [p. 123]</p>
@@ -11335,8 +10831,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.3.5-flyweight"><a class="anchor" href="#a.3.5-flyweight"></a>A.3.5 Flyweight</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>Use sharing to support large numbers of fine-grained objects efficiently.
-<strong>Source:</strong> _Design Patterns</em> [GHJV95].</p>
+<p><strong>Intent</strong> <em>Use sharing to support large numbers of fine-grained objects efficiently.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Design Patterns</em> [GHJV95].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Speculate about Design [p. 87]</p>
@@ -11345,8 +10843,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.3.6-null-object"><a class="anchor" href="#a.3.6-null-object"></a>A.3.6 Null Object</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>A Null Object provides a surrogate for another object that shares the same interface but does nothing. Thus, the Null Object encapsulates the implementation decisions of how to do nothing and hides those details from its collaborators
-<strong>Source:</strong> _Null Object</em> [Woo98].</p>
+<p><strong>Intent</strong> <em>A Null Object provides a surrogate for another object that shares the same interface but does nothing. Thus, the Null Object encapsulates the implementation decisions of how to do nothing and hides those details from its collaborators</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Null Object</em> [Woo98].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Introduce Null Object [p. 274].</p>
@@ -11370,8 +10870,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.3.8-singleton"><a class="anchor" href="#a.3.8-singleton"></a>A.3.8 Singleton</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>Ensure a class only has one instance, and provide a global point of access to it.
-<strong>Source:</strong> _Design Patterns</em> [GHJV95].</p>
+<p><strong>Intent</strong> <em>Ensure a class only has one instance, and provide a global point of access to it.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Design Patterns</em> [GHJV95].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Read all the Code in One Hour [p. 45].</p>
@@ -11380,8 +10882,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.3.9-state"><a class="anchor" href="#a.3.9-state"></a>A.3.9 State</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
-<strong>Source:</strong> _Design Patterns</em> [GHJV95].</p>
+<p><strong>Intent</strong> <em>Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Design Patterns</em> [GHJV95].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Factor out State [p. 266].</p>
@@ -11390,8 +10894,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.3.10-state-patterns"><a class="anchor" href="#a.3.10-state-patterns"></a>A.3.10 State Patterns</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>The State Patterns pattern language refines and clarifies the State Pattern.
-<strong>Source:</strong> _State Patterns</em> [DA97].</p>
+<p><strong>Intent</strong> <em>The State Patterns pattern language refines and clarifies the State Pattern.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>State Patterns</em> [DA97].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Factor out State [p. 266].</p>
@@ -11400,8 +10906,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.3.11-strategy"><a class="anchor" href="#a.3.11-strategy"></a>A.3.11 Strategy</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>Define a family of algorithms, encapsulate each one in a separate class, and define each class with the same interface so they can be interchangeable. Strategy lets the algorithm vary independently from clients that use it.
-<strong>Source:</strong> _Design Patterns</em> [GHJV95].</p>
+<p><strong>Intent</strong> _Define a family of algorithms, encapsulate each one in a separate class, and define each class with the same interface so they can be interchangeable. Strategy lets the algorithm vary independently from clients that use it.</p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Design Patterns</em> [GHJV95].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Factor out Strategy [p. 270].</p>
@@ -11410,8 +10918,10 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.3.12-template-method"><a class="anchor" href="#a.3.12-template-method"></a>A.3.12 Template Method</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
-<strong>Source:</strong> _Design Patterns</em> [GHJV95].</p>
+<p><strong>Intent</strong> <em>Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Source:</strong> <em>Design Patterns</em> [GHJV95].</p>
 </div>
 <div class="paragraph">
 <p><strong>Referenced from:</strong> Look for the Contracts [p. 123].</p>
@@ -11420,14 +10930,375 @@ $ARGV, $swc, $l;
 <div class="sect3">
 <h4 id="a.3.13-visitor"><a class="anchor" href="#a.3.13-visitor"></a>A.3.13 Visitor</h4>
 <div class="paragraph">
-<p><strong>Intent</strong> <em>Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
-<strong>Source:</strong> _Design Patterns</em> [GHJV95].</p>
+<p><strong>Intent</strong> <em>Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.</em></p>
 </div>
 <div class="paragraph">
-<p><strong>Referenced from:</strong> Move Behavior Close to Data [p. 221].
-include::12_bibliography.adoc
-include::13_index.adoc</p>
+<p><strong>Source:</strong> <em>Design Patterns</em> [GHJV95].</p>
 </div>
+<div class="paragraph">
+<p><strong>Referenced from:</strong> Move Behavior Close to Data [p. 221].</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="bibliography"><a class="anchor" href="#bibliography"></a>Bibliography</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|
+|[ABW98] |Sherman R. Alpert, Kyle Brown, and Bobby Woolf. <em>The Design Patterns Smalltalk Companion</em>. Addison Wesley, 1998.
+|[Arn92] |Robert S. Arnold. <em>Software Reengineering</em>. IEEE Computer Society Press, Los Alamitos CA, 1992.
+|[Bak92] |Brenda S. Baker. A program for identifying duplicated code. <em>Computing Science and Statistics</em>, 24:49–57, 1992.
+|[BCK98] |Len Bass, Paul Clements, and Rick Kazman. <em>Software Architecture in Practice</em>. Addison Wesley, 1998.
+|[BDS<sup>+</sup>00] |Mike Beedle, Martine Devos, Yonat Sharon, Ken Schwaber, and Jeff Sutherland. Scrum: A pattern language for hyperproductive software development. In Neil Harrison, Brian Foote, and Hans Rohnert, editors, <em>Pattern Languages of Program Design 4</em>, pages 637–652. Addison Wesley, 2000.
+|[BE96] |Timothy Ball and Stephen Eick. Software visualization in the large. <em>IEEE Computer</em>, 29(4):33–43, 1996.
+|[Bec97] |Kent Beck. <em>Smalltalk Best Practice Patterns</em>. Prentice-Hall, 1997.
+|[Bec00] |Kent Beck. <em>Extreme Programming Explained: Embrace Change</em>. Addison Wesley, 2000.
+|[BF01] |Kent Beck and Martin Fowler. <em>Planning Extreme Programming</em>. Addison Wesley, 2001.
+|[BG98] |Kent Beck and Erich Gamma. Test infected: Programmers love writing tests. <em>Java Report</em>, 3(7):51–56, 1998.
+|[BH95] |Olin Bray and Michael M. Hess. Reengineering a configuration management system. <em>IEEE Software</em>, 12(1):55–63, January 1995.
+|</p>
+</div>
+<div class="paragraph">
+<p>297</p>
+</div>
+<div class="paragraph">
+<p>|
+a|
+[Big89] Ted J. Biggerstaff. Design recovery for maintenance and reuse. <em>IEEE Computer</em>, 22:36–49, October 1989.</p>
+</div>
+<div class="paragraph">
+<p>[Bin99] Robert V. Binder. <em>Testing Object-Oriented Systems: Models, Patterns, and Tools</em>. Object Technology Series. Addison Wesley, 1999.</p>
+</div>
+<div class="paragraph">
+<p>[BLM98] M. Blaha, D. LaPlant, and E. Marvak. Requirements for repository software. In <em>Proceedings of WCRE ’98</em>, pages 164– 173. IEEE Computer Society, 1998. ISBN: 0-8186-89-67-6.</p>
+</div>
+<div class="paragraph">
+<p>[BMF99] Simon Bennett, Steve McRobb, and Ray Farmer. <em>ObjectOriented System Analysis and Design using UML</em>. McGraw Hill, 1999.</p>
+</div>
+<div class="paragraph">
+<p>[BMMM98] William J. Brown, Raphael C. Malveau, Hays W. McCormick,</p>
+</div>
+<div class="paragraph">
+<p>| |III, and Thomas J. Mowbray. <em>AntiPatterns: Refactoring Software, Architectures, and Projects in Crisis</em>. John Wiley Press, 1998.
+|[BMR<sup>+</sup>96] |Frank Buschmann, Regine Meunier, Hans Rohnert, Peter Sommerlad, and Michael Stad. <em>Pattern-Oriented Software Architecture — A System of Patterns</em>. John Wiley Press, 1996.
+|[BMW93] |Ted J. Biggerstaff, Bharat G. Mittbander, and Dallas Webster. The concept assignment problem in program understanding. In <em>Proceedings of the 15th international conference on Software Engineering (ICSE 1993)</em>. IEEE Computer, 1993.
+|[BMW94] |Ted J. Biggerstaff, Bharat G. Mitbander, and Dallas E. Webster. Program understanding and the concept assignment problem. <em>Communications of the ACM</em>, 37(5):72–82, May 1994.
+|[Boe88] |Barry W. Boehm. A spiral model of software development and enhancement. <em>IEEE Computer</em>, 21(5):61–72, 1988.
+|[Boo94] |Grady Booch. <em>Object Oriented Analysis and Design with Applications</em>. The Benjamin Cummings Publishing Co. Inc., 2nd edition, 1994.
+|[BP94] |Jack Barnard and Art Price. Managing code inspection information. <em>IEEE Software</em>, 11(2):59–69, March 1994.
+|[Bro75] |Frederick P. Brooks. <em>The Mythical Man-Month</em>. Addison Wesley, Reading, Mass., 1975.
+|[Bro87] a|
+Frederick P. Brooks. No silver bullet. <em>IEEE Computer</em>,</p>
+</div>
+<div class="paragraph">
+<p>20(4):10–19, April 1987.</p>
+</div>
+<div class="paragraph">
+<p>|</p>
+</div>
+<div class="paragraph">
+<p>|
+|[Bro96] |Kyle Brown. Design reverse-engineering and automated design pattern detection in Smalltalk. Master’s thesis, North Carolina State University, 1996.
+|[BS95] |Michael L. Brodie and Michael Stonebraker. <em>Migrating Legacy Systems</em>. Morgan Kaufmann, 1995.
+|[BS97] |David Bellin and Susan Suchman Simone. <em>The CRC Card Book</em>. Addison Wesley, 1997.
+|[BW96] |Kyle Brown and Bruce G. Whitenack. Crossing chasms: A pattern language for object-rdbms integration. In John M. Vlissides, James O. Coplien, and Norman L. Kerth, editors, <em>Pattern Languages of Program Design 2</em>, pages 227–238. Addison Wesley, 1996.
+|[CHR01] a|
+Stephen Cook, Rachel Harrison, and Brian Ritchie. Assessing the evolution of financial management information systems. In <em>ECOOP 2001 Workshop Reader</em>, volume 2323 of <em>LNCS</em>.</p>
+</div>
+<div class="paragraph">
+<p>Springer-Verlag, 2001.</p>
+</div>
+<div class="paragraph">
+<p>|[CI92] |Elliot J. Chikofsky and James H. Cross II. Reverse engineering and design recovery: A taxonomy. In Robert S. Arnold, editor, <em>Software Reengineering</em>, pages 54–58. IEEE Computer Society Press, 1992.
+|[Coc93] |Alistair Cockburn. The impact of object-orientation on application development. <em>IBM Systems Journal</em>, 32(3):420–444, March 1993.
+|[Con68] |Melvin E. Conway. How do committees invent? <em>Datamation</em>, 14(4):28–31, April 1968.
+|[Cop92] |James O. Coplien. <em>Advanced C++: Programming Styles and Idioms</em>. Addison Wesley, 1992.
+|[Cop95] |James O. Coplien. A development process generative pattern language. In James O. Coplien and Douglas Schmidt, editors, <em>Pattern Languages of Program Design</em>, pages 183–237. Addison Wesley, 1995.
+|[Cor89] |Thomas A. Corbi. Program understanding: Challenge for the 1990’s. <em>IBM Systems Journal</em>, 28(2):294–306, 1989.
+|[CRR96] |Debra Cameron, Bill Rosenblatt, and Eric Raymond. <em>Learning GNU Emacs</em>. O’Reilly, 1996.
+|[DA97] |Paul Dyson and Bruse Anderson. State patterns. In Robert Martin, Dirk Riehle, and Frank Buschmann, editors, <em>Pattern Languages of Program Design 3</em>. Addison Wesley, 1997.
+|[Dav95] |Alan Mark Davis. <em>201 Principles of Software Development</em>. McGraw-Hill, 1995.
+|[DD99] |Serge Demeyer and Stéphane Ducasse. Metrics, do they really help? In Jacques Malenfant, editor, <em>Proceedings of Languages et Modèles à Objets (LMO’99)</em>, pages 69–82. HERMES Science Publications, Paris, 1999.
+|[DDL99] |Serge Demeyer, Stéphane Ducasse, and Michele Lanza. A hybrid reverse engineering platform combining metrics and program visualization. In Francoise Balmas, Mike Blaha, and Spencer Rugaber, editors, <em>Proceedings of 6th Working Conference on Reverse Engineering (WCRE ’99)</em>. IEEE Computer Society, October 1999.
+|[DDN00] a|
+Serge Demeyer, Stéphane Ducasse, and Oscar Nierstrasz.</p>
+</div>
+<div class="paragraph">
+<p>Finding refactorings via change metrics. In <em>Proceedings of 15th International Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA ’00)</em>, pages 166– 178, New York NY, 2000. ACM Press. Also appeared in ACM SIGPLAN Notices 35 (10).</p>
+</div>
+<div class="paragraph">
+<p>|[DG97] |Serge Demeyer and Harald Gall, editors. <em>Proceedings of the ESEC/FSE Workshop on Object-Oriented Re-engineering</em>. TUV1841-97-10. Technical University of Vienna — Information Systems Institute — Distributed Systems Group, September 1997.
+|[DL99] |Tom DeMarco and Timothy Lister. <em>Peopleware, Productive Projects and Teams</em>. Dorset House, 2nd edition, 1999.
+|[DR98] a|
+David E. DeLano and Linda Rising. Patterns for system testing. In Robert Martin, Dirk Riehle, and Frank Buschmann, editors, <em>Pattern Languages of Program Design 3</em>, pages 503–527.</p>
+</div>
+<div class="paragraph">
+<p>Addison-Welsey, 1998.</p>
+</div>
+<div class="paragraph">
+<p>|[DRD99] |Stéphane Ducasse, Matthias Rieger, and Serge Demeyer. A language independent approach for detecting duplicated code. In Hongji Yang and Lee White, editors, _Proceedings|</p>
+</div>
+<div class="paragraph">
+<p><em>of 15th IEEE International Conference on Software Maintenance (ICSM’99)</em>, pages 109–118. IEEE Computer Society, September 1999.</p>
+</div>
+<div class="paragraph">
+<p>|
+|[FBB<sup>+</sup>99] |Martin Fowler, Kent Beck, John Brant, William Opdyke, and Don Roberts. <em>Refactoring: Improving the Design of Existing Code</em>. Addison Wesley, 1999.
+|[FH79] |R.K. Fjeldstad and W. T. Hamlen. Application program maintenance study: report to our respondents. In <em>Proceedings of GUIDE 48</em>. The Guide Corporation, 1979.
+|[FMvW97] a|
+Gert Florijn, Marco Meijers, and Pieter van Winsen. Tool support for object-oriented patterns. In Mehmet Aksit and Satoshi Matsuoka, editors, <em>Proceedings ECOOP ’97</em>, volume 1241 of <em>LNCS</em>, pages 472–495, Jyvaskyla, Finland, June 1997.</p>
+</div>
+<div class="paragraph">
+<p>Springer-Verlag.</p>
+</div>
+<div class="paragraph">
+<p>|[Fow97] |Martin Fowler. <em>Analysis Patterns: Reusable Objects Models</em>. Addison Wesley, 1997.
+|[FP96] |Norman Fenton and Shari Lawrence Pfleeger. <em>Software Metrics: A Rigorous and Practical Approach</em>. International Thomson Computer Press, London, UK, second edition, 1996.
+|[Fro94] |Stuart Frost. Modelling for the rdbms legacy. <em>Object Magazine</em>, pages 43–51, September 1994.
+|[FY00] |Brian Foote and Joseph W. Yoder. Big ball of mud. In N. Harrison, B. Foote, and H. Rohnert, editors, <em>Pattern Languages of Program Design</em>, volume 4, pages 654–692. Addison Wesley, 2000.
+|[GG93] |Tom Gilb and Dorothy Graham. <em>Software Inspection</em>. Addison Wesley, 1993.
+|[GHJ98] |Harald Gall, Karin Hajek, and Mehdi Jazayeri. Detection of logical coupling based on product release history. In <em>Proceedings International Conference on Software Maintenance (ICSM ’98)</em>, pages 190–198, Los Alamitos CA, 1998. IEEE Computer Society Press.
+|[GHJV95] |Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides. <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>. Addison Wesley, Reading, Mass., 1995.
+|[Gla97] |Robert L. Glass. <em>Building Quality Software</em>. Prentice-Hall, 1997.
+|[GR95] |Adele Goldberg and Kenneth S. Rubin. _Succeeding With Ob-|</p>
+</div>
+<div class="paragraph">
+<p>jects: Decision Frameworks for Project Management_. Addison Wesley, Reading, Mass., 1995.</p>
+</div>
+<div class="paragraph">
+<p>|
+|[GW99] |Harald Gall and Johannes Weidl. Object-model driven abstraction-to-code mapping. In <em>Proceedings of the 2nd Workshop on Object-Oriented Reengineering (WOOR 1999)</em>. Technical University of Vienna — Technical Report TUV-1841-99-13, 1999.
+|[Har96] a|
+Neil B. Harrison. Organizational patterns for teams. In John M. Vlissides, James O. Coplien, and Norman L. Kerth, editors, <em>Pattern Languages of Program Design 2</em>, pages 345–352.</p>
+</div>
+<div class="paragraph">
+<p>Addison Wesley, 1996.</p>
+</div>
+<div class="paragraph">
+<p>|[HEH<sup>^96] |J.-L. Hainaut, V. Englebert, J. Henrard, J.-M. Hick, and D. Roland. Database reverse engineering: From requirements to CARE tools. _Automated Software Engineering_, 3(1-2), June 1996.
+|[Hel95] |Jonathan I. Helfman. Dotplot patterns: a literal look at pattern languages. _TAPOS_, 2(1):31–41, 1995.
+|[IKM^</sup>97] |Dan Ingalls, Ted Kaehler, John Maloney, Scott Wallace, and Alan Kay. Back to the future: The story of Squeak, A practical Smalltalk written in itself. In <em>Proceedings OOPSLA ’97, ACM SIGPLAN Notices</em>, pages 318–326. ACM Press, November 1997.
+|[JAH01] |Ron Jeffries, Ann Anderson, and Chet Hendrickson. <em>Extreme Programming Installed</em>. Addison Wesley, 2001.
+|[JC00] |Daniel Jackson and John Chapin. Redesigning air traffic control: An exercise in software design. <em>IEEE Software</em>, 17(3):63– 70, May 2000.
+|[JCJO92] |Ivar Jacobson, Magnus Christerson, Patrik Jonsson, and Gunnar Overgaard. <em>Object-Oriented Software Engineering — A Use Case Driven Approach</em>. Addison Wesley/ACM Press, Reading, Mass., 1992.
+|[JGJ97] |Ivar Jacobson, Martin Griss, and Patrik Jonsson. <em>Software Reuse</em>. Addison Wesley/ACM Press, 1997.
+|[JGR99] a|
+Mehdi Jazayeri, Harald Gall, and Claudio Riva. Visualizing</p>
+</div>
+<div class="paragraph">
+<p>Software Release Histories: The Use of Color and Third Di-</p>
+</div>
+<div class="paragraph">
+<p>|</p>
+</div>
+<div class="paragraph">
+<p>mension. In <em>Proceedings of ICSM ’99 (International Conference on Software Maintenance)</em>, pages 99–108. IEEE Computer Society Press, 1999.</p>
+</div>
+<div class="paragraph">
+<p>|
+|[JS96] |Dean F. Jerding and John T. Stasko. The information mural: Increasing information bandwidth in visualizations. Technical Report GIT-GVU-96-25, Georgia Institute of Technology, October 1996.
+|[JSZ97] |Jens. H. Jahnke, Wilhelm. Schäfer, and Albert. Zündorf. Generic fuzzy reasoning nets as a basis ofr reverse engineering relational database applications. In <em>Proceedings of ESEC/FSE ’97</em>, number 1301 in LNCS, pages 193–210, 1997. inproceedings.
+|[KC98a] |Rick Kazman and S. Jeromy Carriere. View extraction and view fusion in architectural understanding. In <em>Proceedings of the 5th International Conference on Software Reuse</em>, Victoria, B.C., 1998.
+|[KC98b] |Wolfgang Keller and Jens Coldewey. Accessing relational databases: A pattern language. In Robert Martin, Dirk Riehle, and Frank Bushmann, editors, <em>Pattern Languages of Program Design 3</em>, pages 313–343. Addison Wesley, 1998.
+|[KC99] |Rick Kazman and S. J. Carriere. Playing detective: Reconstructing software architecture from available evidence. <em>Automated Software Engineering</em>, April 1999.
+|[Kel00] |Wolfgang Keller. The bridge to the new town — a legacy system migration pattern. In <em>Proceedings of EuroPLoP 2000</em>, 2000.
+|[Knu92] |Donald E. Knuth. <em>Literate Programming</em>. Stanford, California: Center for the Study of Language and Information, 1992.
+|[Lan99] |Michele Lanza. Combining Metrics and Graphs for Object Oriented Reverse Engineering. Diploma Thesis, University of Bern, October 1999.
+|[LB85] |Manny Lehman and Les Belady. <em>Program Evolution: Processes of Software Change</em>. London Academic Press, London, 1985.
+|[Lea96] |Doug Lea. <em>Concurrent Programming in Java, Design Principles and Patterns</em>. The Java Series. Addison Wesley, 1996.
+|[LHR88] |Karl J. Lieberherr, Ian M. Holland, and Arthur Riel. Objectoriented programming: An objective sense of style. In _Pro-|</p>
+</div>
+<div class="paragraph">
+<p><em>ceedings OOPSLA ’88, ACM SIGPLAN Notices</em>, volume 23, pages 323–334, November 1988.</p>
+</div>
+<div class="paragraph">
+<p>|
+|[LK94] |Mark Lorenz and Jeff Kidd. <em>Object-Oriented Software Metrics: A Practical Guide</em>. Prentice-Hall, 1994.
+|[Lov93] |Tom Love. <em>Object Lessons — Lessons Learned in Object-Oriented Development Projects</em>. SIGS Books, New York, 1993.
+|[LPM<sup>^97] |Bruno Laguë, Daniel Proulx, Ettore M. Merlo, Jean Mayrand, and John Hudepohl. Assessing the benefits of incorporating function clone detection in a development process. In _Proceedings of ICSM (International Conference on Software Maintenance)_. IEEE, 1997.
+|[Mar82] |Tom De Marco. _Controlling Software Projects_. Yourdon Press, 1982.
+|[Mey96] |Scott Meyers. _More Effective C_. Addison Wesley, 1996.
+|[Mey98] |Scott Meyers. _Effective C_. Addison Wesley, second edition, 1998.
+|[MJS^</sup>00] |Hausi A. Müller, Jens H. Janhke, Dennis B. Smith, MargaretAnne Storey, Scott R. Tilley, and Kenny Wong. Reverse engineering: A roadmap. In A. Finkelstein, editor, <em>The Future of Software Engineering 2000</em>. ACM Press, 2000.
+|[MLM96] |Jean Mayrand, Claude Leblanc, and Ettore M. Merlo. Experiment on the automatic detection of function clones in a software system using metrics. In <em>International Conference on Software Maintenance (ICSM)</em>, pages 244–253, 1996.
+|[MN97] |Gail C. Murphy and David Notkin. Reengineering with reflexion models: A case study. <em>IEEE Computer</em>, 8:29–36, 1997.
+|[Nes88] |Paolo Nesi. Managing OO project better. <em>IEEE Software</em>, July 1988.
+|[Nie99] |Jakob Nielsen. <em>Usability Engineering</em>. Morgan Kaufmann, 1999.
+|[O’C00] |Alan O’Callaghan. Patterns for architectural praxis. In <em>Proceedings of EuroPLoP 2000</em>, 2000.
+|[ODF99] |Alan O’Callaghan, Ping Dai, and Ray Farmer. Patterns for change — sample patterns from the adaptor pattern language. In <em>Proceedings of EuroPLoP 1999</em>, 1999.
+|[PB94] |William J. Premerlani and Michael R. Blaha. An approach for reverse engineering of relational databases. <em>Communications of the ACM</em>, 37(5):42–49, May 1994.
+|</p>
+</div>
+<div class="paragraph">
+<p>|
+|[PK82] a|
+J. Pustell and F. Kafatos. A high speed, high capacity homology matrix: Zooming through SV40 and polyoma. <em>Nucleid
+_Acids Research</em>, 10(15):4765–4782, 1982.</p>
+</div>
+<div class="paragraph">
+<p>|[PK01] |Joseph Pelrine and Alan Knight. <em>Mastering ENVY/Developer</em>. Cambridge University Press, 2001.
+|[Pre94] |Roger S. Pressman. <em>Software Engineering: A Practitioner’s Approach</em>. McGraw-Hill, 1994.
+|[RBCM91] |D.J. Robson, K. H. Bennet, B. J. Cornelius, and M. Munro. Approaches to program comprehension. <em>Journal of Systems and Software</em>, 14:79–84, February 1991. Republished in [Arno92a].
+|[RBJ97] |Don Roberts, John Brant, and Ralph E. Johnson. A refactoring tool for Smalltalk. <em>Theory and Practice of Object Systems (TAPOS)</em>, 3(4):253–263, 1997.
+|[RD99] |Tamar Richner and Stéphane Ducasse. Recovering highlevel views of object-oriented applications from static and dynamic information. In Hongji Yang and Lee White, editors, <em>Proceedings of 15th IEEE International Conference on Software Maintenance (ICSM’99)</em>, pages 13–22, Los Alamitos CA, September 1999. IEEE Computer Society Press.
+|[Ree96] |Trygve Reenskaug. <em>Working with Objects: The OOram Software Engineering Method</em>. Manning Publications, 1996.
+|[RG98] |Dirk Riehle and Thomas Gross. Role model based framework design and integration. In <em>Proceedings OOPSLA ’98, ACM SIGPLAN Notices</em>, pages 117–133, October 1998.
+|[Rie96] |Arthur Riel. <em>Object-Oriented Design Heuristics</em>. Addison Wesley, Boston MA, 1996.
+|[Ris00] |Linda Rising. Customer interaction patterns. In Neil Harrison, Brian Foote, and Hans Rohnert, editors, <em>Pattern Languages of Program Design 4</em>, pages 585–609. Addison Wesley, 2000.
+|[Rob99] |Donald Bradley Roberts. <em>Practical Analysis for Refactoring</em>. PhD thesis, University of Illinois, 1999.
+|[RS89] a|
+Trygve Reenskaug and Anna Lise Skaar. An environment for literate Smalltalk programming. In <em>Proceedings OOPSLA ’89, ACM SIGPLAN Notices</em>, volume 24, pages 337–346, October</p>
+</div>
+<div class="paragraph">
+<p>1989.</p>
+</div>
+<div class="paragraph">
+<p>|</p>
+</div>
+<div class="paragraph">
+<p>|
+|[RW98] |Spencer Rugaber and Jim White. Restoring a legacy: Lessons learned. <em>IEEE Software</em>, 15(4):28–33, July 1998.
+|[SG96] |Mary Shaw and David Garlan. <em>Software Architecture: Perspectives on an Emerging Discipline</em>. Prentice-Hall, 1996.
+|[Sha97] |Alec Sharp. <em>Smalltalk by Example</em>. McGraw-Hill, 1997.
+|[SLMD96] |Patrick Steyaert, Carine Lucas, Kim Mens, and Theo D’Hondt. Reuse Contracts: Managing the Evolution of Reusable Assets. In <em>Proceedings of OOPSLA ’96 (International Conference on Object-Oriented Programming, Systems, Languages, and Applications)</em>, pages 268–285. ACM Press, 1996.
+|[Sne99] |Harry M. Sneed. Risks involved in reengineering projects. In <em>Proceedings of the 6th Working Conference on Reverse Engineering (WCRE)</em>. IEEE, 1999.
+|[Som96] |Ian Sommerville. <em>Software Engineering</em>. Addison Wesley, fifth edition, 1996.
+|[SP98] |Perdita Stevens and Rob Pooley. System reengineering patterns. In <em>Proceedings of FSE-6</em>. ACM-SIGSOFT, 1998.
+|[SRMK99] |Reinhard Schauer, Sébastian Robitaille, Francois Martel, and Rudolf Keller. Hot-Spot Recovery in Object-Oriented Software with Inheritance and Composition Template Methods. In <em>Proceedings of ICSM ’99 (International Conference on Software Maintenance)</em>. IEEE Computer Society Press, 1999.
+|[SSRB00] |Douglas C. Schmidt, Michael Stal, Hans Rohnert, and Frank Buschmann. <em>Pattern-Oriented Software Architecture Volume 2 — Networked and Concurrent Objects</em>. John Wiley and Sons, 2000.
+|[SW98] |Geri Schneider and Jason P. Winters. <em>Applying Use Cases</em>. Addison Wesley, 1998.
+|[Tay00] |Paul Taylor. Capable, productive, and satisfied: Some organizational patterns for protecting productive people. In N. Harrison, B. Foote, and H. Rohnert, editors, <em>Pattern Languages of Program Design</em>, volume 4, pages 611–636. Addison Wesley, 2000.
+|[Tho98] |Rob Thomsett. The year 2000 bug: a forgotten lesson. <em>IEEE Software</em>, 15(4):91–93,95, July 1998.
+|</p>
+</div>
+<div class="paragraph">
+<p>|
+|[WBWW90] Rebecca Wirfs-Brock, Brian Wilkerson, and Lauren Wiener.
+| |<em>Designing Object-Oriented Software</em>. Prentice-Hall, 1990.
+|[WG98] |Johannes Weidl and Harald Gall. Binding object models to source code: An approach to object-oriented rearchitecting. In <em>Proceedings of the 22nd Computer Software and Application Conference (COMPSAC 1998)</em>. IEEE Computer Society Press, 1998.
+|[Woo98] |Bobby Woolf. Null object. In Robert Martin, Dirk Riehle, and Frank Buschmann, editors, <em>Pattern Languages of Program Design 3</em>, pages 5–18. Addison Wesley, 1998.
+|[WTMS95] a|
+Kenny Wong, Scott R. Tilley, Hausi A. Müller, and MargaretAnne D. Storey. Structural redocumentation: A case study.</p>
+</div>
+<div class="paragraph">
+<p><em>IEEE Software</em>, 12(1):46–54, January 1995.</p>
+</div>
+<div class="paragraph">
+<p>|[Wuy98] |Roel Wuyts. Declarative reasoning about the structure objectoriented systems. In <em>Proceedings of the TOOLS USA ’98 Conference</em>, pages 112–124. IEEE Computer Society Press, 1998.
+|[You97] |Edward Yourdon. <em>Death March</em>. Prentice-Hall, 1997.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="appendix"><a class="anchor" href="#appendix"></a>Appendix</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="praise-for-object-oriented-reengineering-patterns"><a class="anchor" href="#praise-for-object-oriented-reengineering-patterns"></a>Praise</h3>
+<div class="paragraph">
+<p><em>for the original Object-Oriented Reengineering Patterns book</em></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>“How” to refactor is already well covered in the literature. However, “When” and “Why” can only be learned by experience. This book will give you a head start in learning when to start redesigning a system, when to stop for now, and what effects you can expect to see from your efforts.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Kent Beck<br>
+<cite>Director, Three Rivers Institute</cite>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>This book is full of practical, hands-on reengineering knowledge and expertise presented in a form that makes it easy to understand and use. The patterns in this book thus help everyone who is concerned with using reengineering to guide their work. I wish I had had this book in my library earlier.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Frank Buschmann<br>
+<cite>Senior Principal Engineer Siemens AG</cite>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>This book is more than its title advertises. Effective reengineering is really about purposeful and efficient reading of someone else’s code in order to produce predictable change. The same processes the authors highlight as patterns of skillful reengineering behavior can easily be cast as the skills you need to create readable, maintainable software systems.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Adele Goldberg<br>
+<cite>Neometron, Inc.</cite>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>If a guy named Dave brought a large box to my office that contained a lot of documentation and two CDs-installation disks for software that my company wanted to reengineer — I’d be happy to have the authors of this book by my side. Barring that, having their book is the next best thing. No silver bullets, no hype, no promises that this will be easy — just a down-toearth, easy-to-read, extremely useful book of helpful guidelines to tackle the project. Buy this book and browse it before Dave arrives in your office! It just might save you and your company a lot of grief.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; ]Linda Rising<br>
+<cite>Independent Consultant</cite>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="foreword"><a class="anchor" href="#foreword"></a>Foreword</h3>
+<div class="sect3">
+<h4 id="foreword-by-martin-fowler"><a class="anchor" href="#foreword-by-martin-fowler"></a>Foreword by Martin Fowler</h4>
+<div class="paragraph">
+<p>For a long time it’s puzzled me that most books on software development processes talk about what to do when you are starting from a blank sheet of editor screen. It’s puzzled me because that’s not the most common situation that people write code in. Most people have to make changes to an existing code base, even if it’s their own. In an ideal world this code base is well designed and well factored, but we all know how often the ideal world appears in our career.</p>
+</div>
+<div class="paragraph">
+<p>So this book is important because it’s written from the perspective of what to do with an imperfect yet valuable code base. I also like the fact that it’s based on an effective mix of academic and industrial work. I visited the FAMOOS group in their early days during a chill early winter in Bern. I liked the way that they cycled between the field and the lab, trying out ideas on real projects, coming back to the lab to reflect.</p>
+</div>
+<div class="paragraph">
+<p>This resulting book speaks with that experience. It gives you the building blocks for a plan to tackle a difficult code base, it gives you context for techniques like refactoring. It is a sad fact that there are too few of these kinds of books out there, when reengineering is still a common event. But I’m at least glad to see that while there aren’t many books in this vein, this book is an example of how good they are.</p>
+</div>
+<div class="paragraph">
+<p>Martin Fowler, <em>Thought Works, Inc.</em></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="foreword-by-ralph-e.-johnson"><a class="anchor" href="#foreword-by-ralph-e.-johnson"></a>Foreword by Ralph E. Johnson</h4>
+<div class="paragraph">
+<p>One of the signs of a good pattern is that experts who read it are likely to say “of course, everybody knows that” but beginners are likely to say “interesting, but will it work?” Patterns should be easy to follow, but the most valuable patterns are those that are not obvious. Experts have learned from experience that the patterns work, but beginners have to take the patterns on faith until they use them and develop their own experience.</p>
+</div>
+<div class="paragraph">
+<p>Over the last couple of years, I’ve had the chance to give the patterns in this book to a wide variety of people and discuss them. My pattern discussion group has a few members who have decades of consulting experience, and they could quickly regale the group with stories of using these patterns. The younger members loved the stories as they were convinced of the value of the patterns.</p>
+</div>
+<div class="paragraph">
+<p>I made students in my software engineering class read some of the patterns as part of a section on reengineering. The section went well even though none of the students got excited by the patterns. They didn’t have the experience to evaluate them. However, one of the students came back to me after his summer job and said that of everything in the course, the material that was the most useful was the patterns on reverse engineering. Before that experience, the patterns seemed believable. Afterwards, they were believed!</p>
+</div>
+<div class="paragraph">
+<p>If you have a lot of experience with software reengineering then you probably won’t learn much from this book. You should read it anyway, because you’ll want to give copies to people you work with, and you will want to use the vocabulary of the book when you talk with them. If you are new to reengineering, you should read the book, learn the patterns, and try them. You will learn a lot that will be valuable. Don’t expect to understand the patterns completely before you try them, because patterns are practical, and practical knowledge has to be experienced to be fully understood. Nevertheless, the book will give you a big advantage. It is much easier to learn when you have a path to follow, and this book provides a reliable guide.</p>
+</div>
+<div class="paragraph">
+<p>Ralph E. Johnson, <em>University of Illinois at Urbana-Champaign</em>*</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="acknowledgments"><a class="anchor" href="#acknowledgments"></a>Acknowledgments</h3>
+<div class="paragraph">
+<p>We would like to thank first and foremost our FAMOOS partners at Nokia, Daimler-Benz, FZI and Sema who provided the context for discovering these patterns. Persons like Juha (Julho) Tuominen, Roland Trauter, Eduardo Casais and Theo Dirk Meijler played a crucial role while starting the project. We would especially like to thank our co-authors of the prototype for this book, <em>The FAMOOS Object-Oriented Reengineering Handbook:</em> Holger Bär, Markus Bauer, Oliver Ciupke, Michele Lanza, Radu Marinescu, Robb Nebbe, Michael Przybilski, Tamar Richner, Matthias Rieger, Claudio Riva, Anne-Marie Sassen, Benedikt Schulz, Patrick Steyaert, Sander Tichelaar and Joachim Weisbrod.</p>
+</div>
+<div class="paragraph">
+<p>We gratefully acknowledge the financial support of the European Union towards ESPRIT project 21975 (FAMOOS) as well as that of the Swiss Government towards projects NFS-2000-46947.96 and BBW-96.0015. The University of Antwerp provided financial support in terms of a grant entitled “Object Oriented Reengineering” while the Fund for Scientific Research in Flanders sponsored by means of a research network named “Foundations of Software Evolution”.</p>
+</div>
+<div class="paragraph">
+<p>Some of the material in this book was presented in the graduate course “Object-Oriented software Reengineering” held at the University of Bern in the winter semesters of 1998 and 1999, and at several tutorials at OOPSLA. We would like to thank the participants of the courses and tutorials for their feedback and input. We also would like to thank members of the Software Composition Group at the University of Bern for participating in several pattern workshops and giving valuable feedback on many of the patterns in this book: Michele Lanza, Pietro Malorgio, Robbe Nebbe, Tamar Richner, Matthias Rieger and Sander Tichelaar.</p>
+</div>
+<div class="paragraph">
+<p>Several of the patterns in this book have been presented elsewhere. We would like to thank our EuroPLoP shepherds Kent Beck (1998), Kyle Brown (1999), Neil Harrison (2000), Mary Lynn Manns (2000), Don Roberts (1998) and Charles Weir (1998) and all participants of the writers’ workshops where these patterns have been discussed. Special thanks go to Jens Coldewey for helping us out with pattern forms and forces.</p>
+</div>
+<div class="paragraph">
+<p>We would like to thank the members and friends of Ralph Johnson’s Software Architecture Group who workshopped several chapters of this book: John Brant, Brian Foote, Alejandra Garrido, Peter Hatch, Ralph Johnson, Brian Marick, Andrew Rosenfeld, Weerasak Witthawaskul and Joe Yoder. Downloading and playing voluminous megabytes of workshop recordings in mp3 format truly made each of us feel like a “fly on the wall”!</p>
+</div>
+<div class="paragraph">
+<p>We would like to thank Tim Cox, our editor, and Stacie Pierce, his assistant, both at Morgan Kaufmann, for following our project with such dedication. Also, thanks to Christa Preisendanz at DPunkt Verlag for putting us in touch with Tim in the first place! We especially appreciated the two very thorough rounds of reviews that this book underwent, and we only regret that the final draft of this book is nothing like the definitive work some of reviewers clearly hoped it would be! We thank our reviewers for reading between the lines and helping to explain many of these patterns to us: Kyle Brown, Thierry Cattel, Oliver Ciupke, Koen De Hondt, Jim Coplien, Gert Florijn, Neil Harrison, Mary Lynn Manns, Alan O’Callaghan, Don Roberts and Benedikt Schulz.</p>
 </div>
 </div>
 </div>
@@ -11453,8 +11324,8 @@ include::13_index.adoc</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 0.01<br>
-Last updated 2017-01-27 09:45:26 MEZ
+Version 0.01-alpha<br>
+Last updated 2017-01-27 10:16:42 MEZ
 </div>
 </div>
 </body>
